@@ -69,6 +69,11 @@ public class ThreadObjectsPart implements AppPart {
         threadMessage("----end of threadobjects examples----\n\n");
     }
 
+    @Override
+    public String getName() {
+        return getClass().getSimpleName();
+    }
+
     static void threadMessage(String message) {
         String threadName = Thread.currentThread().getName();
         System.out.format("%s: %s%n",

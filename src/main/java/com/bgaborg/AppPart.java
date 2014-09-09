@@ -5,4 +5,5 @@ package com.bgaborg;
  */
 public interface AppPart {
     public void startExample() throws Exception;
+    public String getName();
 }

@@ -23,4 +23,9 @@ public class SynchronizationPart implements AppPart {
     public void startExample() throws Exception {
         System.out.println("SynchronizationPart: Read the code, and the comments provided for the code. \n");
     }
+
+    @Override
+    public String getName() {
+        return getClass().getSimpleName();
+    }
 }
