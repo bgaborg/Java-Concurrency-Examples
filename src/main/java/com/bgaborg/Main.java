@@ -10,15 +10,15 @@ import java.util.LinkedList;
  */
 public class Main {
 
-    static LinkedList<AppExample> examples = new LinkedList<>();
+    static LinkedList<AppPart> examples = new LinkedList<>();
 
     public static void main(String[] args) {
         examples.add(new ThreadObjectsPart());
         examples.add(new SynchronizationPart());
 
         try {
-            for (AppExample appExample : examples) {
-                appExample.startExample();
+            for (AppPart appPart : examples) {
+                appPart.startExample();
             }
         } catch (Exception e) {
             e.printStackTrace();

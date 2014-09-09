@@ -1,6 +1,6 @@
 package com.bgaborg.synchronization;
 
-import com.bgaborg.AppExample;
+import com.bgaborg.AppPart;
 
 /**
  * Synchronization
@@ -18,7 +18,7 @@ import com.bgaborg.AppExample;
  * <p/>
  * Created by bg
  */
-public class SynchronizationPart implements AppExample {
+public class SynchronizationPart implements AppPart {
     @Override
     public void startExample() throws Exception {
         System.out.println("SynchronizationPart: Read the code, and the comments provided for the code. \n");

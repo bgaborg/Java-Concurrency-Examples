@@ -1,6 +1,6 @@
 package com.bgaborg.threadobjects;
 
-import com.bgaborg.AppExample;
+import com.bgaborg.AppPart;
 
 /**
  * Thread Objects
@@ -14,7 +14,7 @@ import com.bgaborg.AppExample;
  * <p/>
  * Created by bg
  */
-public class ThreadObjectsPart implements AppExample {
+public class ThreadObjectsPart implements AppPart {
 
     @Override
     public void startExample() throws Exception {

@@ -3,6 +3,6 @@ package com.bgaborg;
 /**
  * Created by bg
  */
-public interface AppExample {
+public interface AppPart {
     public void startExample() throws Exception;
 }
