@@ -47,7 +47,7 @@ public class Interrupts implements Runnable {
 
         iFor:
         for (String str : importantInfo) {
-            System.out.println(str);
+            threadMessage(str);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
