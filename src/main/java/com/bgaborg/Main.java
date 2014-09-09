@@ -4,7 +4,6 @@ import com.bgaborg.liveness.LivenessPart;
 import com.bgaborg.synchronization.SynchronizationPart;
 import com.bgaborg.threadobjects.ThreadObjectsPart;
 
-import java.io.BufferedInputStream;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -23,27 +22,27 @@ public class Main {
         try {
             String input = "";
             while (!input.equals("q")) {
-                System.out.println("Java Concurrency Examples AIO" +
+                System.out.println("Java Concurrency Examples AIO - Lots of comments inside (R)" +
                         "\n\nChoose from:");
 
                 for (int i = 0; i < examples.size(); i++) {
                     System.out.printf("%d.: %s\n", i, examples.get(i).getName());
                 }
+                System.out.println("Quit with 'q'\n");
+                System.out.print("Choice: ");
 
-                Scanner scanner = new Scanner(System.in);
-                input = scanner.nextLine();
+                input = new Scanner(System.in).nextLine();
                 try {
                     int inx = Integer.parseInt(input);
                     examples.get(inx).startExample();
                 } catch (NumberFormatException e) {
                     System.out.println("Input not an integer: " + input);
-                    System.out.println("Quit with 'q'\n");
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
         System.exit(0);
     }
 }
